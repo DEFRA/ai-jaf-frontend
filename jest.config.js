@@ -9,6 +9,10 @@ export default {
   silent: true,
   testMatch: ['**/src/**/*.test.js'],
   reporters: ['default', ['github-actions', { silent: false }], 'summary'],
+  transform: {
+    '^.+\\.js$': 'babel-jest'
+  },
+  transformIgnorePatterns: [],
   collectCoverageFrom: ['src/**/*.js'],
   coveragePathIgnorePatterns: [
     '<rootDir>/node_modules/',

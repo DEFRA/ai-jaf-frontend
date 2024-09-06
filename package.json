@@ -1,6 +1,6 @@
 {
   "name": "ai-jaf-frontend",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "CDP Frontend Template",
   "sideEffects": false,
   "main": ".server/index.js",
@@ -55,6 +55,7 @@
     "hapi-pulse": "3.0.1",
     "https-proxy-agent": "7.0.5",
     "ioredis": "5.4.1",
+    "joi": "17.13.3",
     "lodash": "4.17.21",
     "node-fetch": "3.3.2",
     "nunjucks": "3.2.4",
