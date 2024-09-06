@@ -15,14 +15,14 @@ const govukFrontendPath = path.dirname(
   require.resolve('govuk-frontend/package.json')
 )
 
-/**
- * @type {Configuration}
- */
 export default {
   context: path.resolve(dirname, 'src/client'),
   entry: {
     application: {
       import: ['./javascripts/application.js', './stylesheets/application.scss']
+    },
+    sortableTable: {
+      import: ['./javascripts/sortable-table.js']
     }
   },
   experiments: {

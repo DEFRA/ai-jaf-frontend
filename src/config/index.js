@@ -195,6 +195,14 @@ export const config = convict({
       format: Boolean,
       default: isDevelopment
     }
+  },
+  backend: {
+    url: {
+      doc: 'Backend URL',
+      format: String,
+      default: 'http://localhost:3001',
+      env: 'BACKEND_URL'
+    }
   }
 })
 
